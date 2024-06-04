@@ -1,0 +1,39 @@
+.navbar-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    border-bottom: 0.1rem solid white;
+    width: 100vw;
+    justify-content: space-between;
+    height: 50px; 
+    align-items: center;   
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-links li {
+    float: left;
+}
+
+.navbar-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar-links li a:hover {
+    background-color: #111;
+}
