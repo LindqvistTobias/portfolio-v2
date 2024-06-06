@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     display: flex;
     width: 100vw;
@@ -7,27 +11,27 @@
     flex-direction: column;
     margin: auto;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-between;   
   }
 
-  .logo {
+  .hero {
     align-self: center;
     margin-bottom: 0px;
     max-width: 100%;
-    height: auto;
+    height: 60%;
   }
 
   .container-left {
     display: flex;
     position: relative;
-    left: -20%;
-    top: 5rem;
+    left: -15rem;
+    top: 15rem;
   }
 
   .container-right {
     display: flex;
     position: relative;
-    
+    right: -35rem;    
   }
 
   .dark {

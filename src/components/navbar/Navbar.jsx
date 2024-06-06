@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
+import { Link as ScrollLink } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = () => {  
+
   return (
     <motion.div
       className="navbar-container"
@@ -15,26 +17,74 @@ const Navbar = () => {
         <div className="navbar-links">
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <ScrollLink
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-50}
+              >
+                Home
+              </ScrollLink>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <ScrollLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-50}
+              >
+                Skills
+              </ScrollLink>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-50}
+              >
+                Projects
+              </ScrollLink>
             </li>
             <li>
-              <a href="#aboutme">About me</a>
+              <ScrollLink
+                to="about-me"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-50}
+              >
+                About me
+              </ScrollLink>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-50}
+              >
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>
         <div className="navbar-socials">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/tobias-lindqvist-dev/" className={`sprite sprite-linkedin-white`}></a>
+              <a
+                href="https://www.linkedin.com/in/tobias-lindqvist-dev/"
+                className={`sprite sprite-linkedin-white`}
+              ></a>
             </li>
           </ul>
         </div>
