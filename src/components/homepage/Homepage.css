@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .logo {
+    align-self: center;
+    margin-bottom: 0px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container-left {
+    display: flex;
+    position: relative;
+    left: -20%;
+    top: 5rem;
+  }
+
+  .container-right {
+    display: flex;
+    position: relative;
+    
+  }
+
+  .dark {
+    background-color: var(--background-color-dark);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  }

@@ -10,25 +10,34 @@ const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      <h2 style={{ marginLeft: "5%" }}>Tobias Lindqvist</h2>
-      <div className="navbar-links">
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#aboutme">About me</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div className="navbar-inner-container">
+        <h2 style={{ marginLeft: "5%" }}>TL</h2>
+        <div className="navbar-links">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#aboutme">About me</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-socials">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/tobias-lindqvist-dev/" className={`sprite sprite-linkedin-white`}></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </motion.div>
   );
