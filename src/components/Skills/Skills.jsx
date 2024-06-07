@@ -16,7 +16,7 @@ const Skills = () => {
             <div className="info-container">
                 <div className="text-container">
                     <h4>Technologies</h4>
-                    <p>Lorem ipsum dolor sit amet1, consectetur adipisicing elit. Ratione blanditiis culpa suscipit neque deserunt iusto repellat labore natus aliquam ut eos, vitae illo soluta dignissimos accusamus nostrum, at aspernatur molestias.</p>
+                    <p>Lorem ipsum dolor si1t amet1, consectetur adipisicing elit. Ratione blanditiis culpa suscipit neque deserunt iusto repellat labore natus aliquam ut eos, vitae illo soluta dignissimos accusamus nostrum, at aspernatur molestias.</p>
                 </div>
                 <div className="skills-container">
                 <div className="img-container">
