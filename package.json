@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {    
+  "scripts": {
     "preinstall": "curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm",
     "dev": "vite",
     "build": "vite build",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.2.10",
+    "gatsby": "^5.13.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0"
