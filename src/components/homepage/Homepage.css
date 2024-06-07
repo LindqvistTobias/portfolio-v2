@@ -26,12 +26,18 @@ html {
     position: relative;
     left: -15rem;
     top: 15rem;
+    text-align: center; 
   }
 
   .container-right {
     display: flex;
     position: relative;
-    right: -35rem;    
+    right: -35rem;
+    text-align: center;    
+  }
+
+  .container-right p {
+    width: 20rem;
   }
 
   .dark {

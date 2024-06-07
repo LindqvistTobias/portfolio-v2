@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
+import Skills from "../Skills/Skills"
 import "./Homepage.css";
 import tobiasImage from '../../assets/tobiasLindqvistTransparent.png';
 
@@ -13,19 +14,19 @@ const Homepage = () => {
           <motion.div
             initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
-            transition={{ type: "spring", stiffness: 120, delay: 1 }}
+            transition={{ type: "spring", stiffness: 20, delay: 1 }}
           >
             <h1>Coder</h1>
             <p>Mern developer</p>
           </motion.div>
           <div className="container-right">
             <motion.div
-              initial={{ x: "-100vw" }}
+              initial={{ x: "200vw" }}
               animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 120, delay: 1 }}
+              transition={{ type: "spring", stiffness: 20, delay: 1 }}
             >
               <h1>Experience</h1>
-              <p>10 years in sales and customer relations</p>
+              <p>10 years experience in sales and customer relations</p>
             </motion.div>
           </div>
         </div>
@@ -39,7 +40,7 @@ const Homepage = () => {
         />
       </section>
       <section id="skills" className={`container dark`}>
-        <h2>Skills</h2>
+        <Skills />
       </section>
       <section id="projects" className={`container`}>
         <h2>Projects</h2>

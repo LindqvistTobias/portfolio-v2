@@ -1,12 +1,9 @@
 import "./App.css";
-import Homepage from "./components/homepage/Homepage";
-import Navbar from "./components/navbar/Navbar";
-
+import Homepage from "./components/Homepage/Homepage";
 
 function App() {
   return (
-    <>
-      
+    <>      
       <Homepage />
     </>
   );
