@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import "./Homepage.css";
+import tobiasImage from '../../assets/tobiasLindqvistTransparent.png';
 
 const Homepage = () => {
   return (
@@ -29,7 +30,7 @@ const Homepage = () => {
           </div>
         </div>
         <motion.img
-          src="src/assets/tobiasLindqvistTransparent.png"
+          src={tobiasImage}
           alt="Tobias Lindqvist picture"
           className="hero"
           initial={{ opacity: 0 }}
