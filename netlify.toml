@@ -1,6 +1,6 @@
 [build]
   command = "pnpm run build"
-  publish = "/opt/build/repo/dist"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18.12.0"
