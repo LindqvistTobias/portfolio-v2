@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+  inputs = { node_modules = true }
+
+[build.processing]
+  skip_processing = true
