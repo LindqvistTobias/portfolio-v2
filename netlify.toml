@@ -3,7 +3,11 @@
   publish = "build"
 
 [build.environment]
-  NODE_VERSION = "16"
+  NODE_VERSION = "18.12.0"
 
-[build.lifecycle]
-  onBuild = "curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm && pnpm install"
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+  inputs = { node_modules = true }
+
+[build.processing]
+  skip_processing = true
