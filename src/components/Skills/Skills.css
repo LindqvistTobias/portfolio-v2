@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 0.1rem solid var(--text-color-secondary);
-    margin-top: 5rem;
-    width: 50%;
+    border-top: 0.1rem solid var(--text-color-secondary);    
+    width: 55%;
+    margin-top: -15rem;
 }
 
 .divider-container {
@@ -51,4 +51,7 @@
     width: 5rem;
     height: 5rem;
     object-fit: cover;
+    background-color: #959cff44;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }

@@ -9,15 +9,16 @@ import nodejs from "../../assets/nodejs.svg"
 
 
 const Skills = () => {
-  return <div className="section-container">
-    <div className="divider-container">
-        <h3>Skills</h3></div>
-        <div className="info-container">
-            <div className="text-container">
-                <h4>Technologies</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione blanditiis culpa suscipit neque deserunt iusto repellat labore natus aliquam ut eos, vitae illo soluta dignissimos accusamus nostrum, at aspernatur molestias.</p>
-            </div>
-            <div className="skills-container">
+  return (
+    <div className="section-container">
+        <div className="divider-container">
+            <h3>Skills</h3></div>
+            <div className="info-container">
+                <div className="text-container">
+                    <h4>Technologies</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione blanditiis culpa suscipit neque deserunt iusto repellat labore natus aliquam ut eos, vitae illo soluta dignissimos accusamus nostrum, at aspernatur molestias.</p>
+                </div>
+                <div className="skills-container">
                 <div className="img-container">
                     <img src={cssLogo} alt="css logo" />
                     <img src={express} alt="css logo" />
@@ -29,7 +30,8 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-    </div>;
+    </div>
+  )
 };
 
 export default Skills;

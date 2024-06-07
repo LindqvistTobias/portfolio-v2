@@ -1,43 +1,47 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import Skills from "../Skills/Skills"
+import Skills from "../Skills/Skills";
 import "./Homepage.css";
-import tobiasImage from '../../assets/tobiasLindqvistTransparent.png';
+import tobiasImage from "../../assets/tobiasLindqvistTransparent.png";
 
 const Homepage = () => {
   return (
     <div>
       <Navbar />
       <section id="home" className="container">
-        <div className="container-left">
-          <motion.div
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ type: "spring", stiffness: 20, delay: 1 }}
-          >
-            <h1>Coder</h1>
-            <p>Mern developer</p>
-          </motion.div>
-          <div className="container-right">
+        <div className="container-inner">  
+                  
             <motion.div
+              className="container-left"
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", stiffness: 20, delay: 1 }}
+            >
+              <h1>&lt;Coder /&gt;</h1>
+              <p>Full stack developer</p>
+            </motion.div>            
+            <motion.div
+              className="container-right"
               initial={{ x: "200vw" }}
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 20, delay: 1 }}
             >
               <h1>Experience</h1>
-              <p>10 years experience in sales and customer relations</p>
+              <p>Over 10 years experience in sales and customer relations</p>
             </motion.div>
-          </div>
+          
         </div>
-        <motion.img
-          src={tobiasImage}
-          alt="Tobias Lindqvist picture"
-          className="hero"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 5, delay: 2 }}
-        />
+        <div className="hero-container">
+            <motion.img
+              src={tobiasImage}
+              alt="Tobias Lindqvist picture"
+              className="hero"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 5, delay: 2 }}
+            />
+        </div>
       </section>
       <section id="skills" className={`container dark`}>
         <Skills />

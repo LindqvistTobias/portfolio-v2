@@ -13,7 +13,7 @@ const Navbar = () => {
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div className="navbar-inner-container">
-        <h2 style={{ marginLeft: "5%" }}>TL</h2>
+        <h2>TL</h2>
         <div className="navbar-links">
           <ul>
             <li>
