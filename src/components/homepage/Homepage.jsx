@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Navbar from "../navbar/Navbar";
-import Skills from "../skills/Skills";
+import Skills from "../Skills/Skills";
 import "./Homepage.css";
 import tobiasImage from "../../assets/tobiasLindqvistTransparent.png";
 
