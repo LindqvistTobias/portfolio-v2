@@ -23,6 +23,7 @@
 .info-container {
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .text-container {
@@ -32,7 +33,7 @@
 }
 
 .text-container p {
-    width: 15rem;
+    width: 80%;
 }
 
 .skills-container {

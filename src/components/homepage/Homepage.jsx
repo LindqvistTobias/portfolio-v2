@@ -3,8 +3,10 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import Skills from "../Skills/Skills";
 import Projects from "../projects/Projects";
+import AboutMe from "../aboutMe/AboutMe";
 import "./Homepage.css";
 import tobiasImage from "../../assets/tobiasLindqvistTransparent.png";
+import Contact from "../contact/Contact";
 
 const Homepage = () => {
   return (
@@ -51,10 +53,10 @@ const Homepage = () => {
         <Projects />
       </section>
       <section id="about-me" className={`container dark`}>
-        <h2>About me</h2>
+        <AboutMe />
       </section>
       <section id="contact" className={`container `}>
-        <h2>Contact</h2>
+        <Contact />
       </section>
     </div>
   );
