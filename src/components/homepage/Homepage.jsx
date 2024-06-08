@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import Skills from "../Skills/Skills";
+import Projects from "../projects/Projects";
 import "./Homepage.css";
 import tobiasImage from "../../assets/tobiasLindqvistTransparent.png";
 
@@ -47,7 +48,7 @@ const Homepage = () => {
         <Skills />
       </section>
       <section id="projects" className={`container`}>
-        <h2>Projects</h2>
+        <Projects />
       </section>
       <section id="about-me" className={`container dark`}>
         <h2>About me</h2>
