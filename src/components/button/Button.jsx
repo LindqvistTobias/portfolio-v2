@@ -9,16 +9,19 @@ const StyledButton = styled(motion.button)`
   justify-content: center;
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 5px;
   border: none;
-  background: linear-gradient(45deg, #959cff44, #626eff);
+  background-color: #282c34; /* Dark background color */
   color: #fff;
   cursor: pointer;
   outline: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* Matching font family */
 
   &:hover {
+    background-color: #61dafb; /* Light blue color on hover */
+    color: #282c34;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
   }
