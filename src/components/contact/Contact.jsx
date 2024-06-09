@@ -1,21 +1,56 @@
 import React from "react";
 import "./Contact.css";
+import { motion } from "framer-motion";
+import styled from "styled-components";
+import { FaPaperPlane } from "react-icons/fa";
+
+const Button = styled(motion.button)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(45deg, #959cff44, #626eff);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+`;
+
+const IconWrapper = styled.div`
+  margin-left: 10px;
+`;
 
 const Contact = () => {
   return (
     <div id="contact-id" className="section-container">
       <div className="divider-container">
-        <h3>Contact Me</h3>
+        <h3>Contact</h3>
       </div>
       <div className="info-container">
         <div className="text-container">
-          <h4>Technologies</h4>
-          <p>
-            Lorem ipsum dolor si1t a1met1, consectetur adipisicing elit. Ratione
-            blanditiis culpa suscipit neque deserunt iusto repellat labore natus
-            aliquam ut eos, vitae illo soluta dignissimos accusamus nostrum, at
-            aspernatur molestias.
-          </p>
+          <h4>Want to get in touch?</h4>
+          <p>Want to get in touch?</p>
+        </div>
+        <div className="contact-buttons">
+          <Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            Get in Touch
+            <IconWrapper>
+              <FaPaperPlane />
+            </IconWrapper>
+          </Button>
         </div>
       </div>
     </div>

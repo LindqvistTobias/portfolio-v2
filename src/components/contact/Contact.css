@@ -1,3 +1,9 @@
 #contact-id h3 {
     background-color: white;
 }
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
