@@ -19,48 +19,13 @@
     padding: 0rem;
 }
 
+#logo {
+    height: 2rem;
+}
+
 h2 {
     font-size: 2rem;   
 }
-
-.sprite {
-    background-image: url('src/assets/sprite.png');
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 33px;
-    height: 33px;
-    padding: 0px 0px;
-}
-
-.sprite:hover {
-    transform: scale(1.1);     
-}
-
-/* White Social Media Icons */
-.sprite-facebook-white { background-position: 0 0; }
-.sprite-twitter-white { background-position: -33px 0; }
-.sprite-dribbble-white { background-position: -66px 0; }
-.sprite-linkedin-white { background-position: -99px -11px;  }
-.sprite-email-white { background-position: -132px 0; }
-.sprite-instagram-white { background-position: -165px 0; }
-
-/* Up Arrow Icon */
-.sprite-up-arrow { background-position: 0 -33px; }
-
-/* Navigation Arrows */
-.sprite-left-arrow1 { background-position: 0 -66px; }
-.sprite-right-arrow1 { background-position: -33px -66px; }
-.sprite-left-arrow2 { background-position: 0 -99px; }
-.sprite-right-arrow2 { background-position: -33px -99px; }
-
-/* Colored Social Media Icons */
-.sprite-facebook-colored { background-position: 0 -132px; }
-.sprite-twitter-colored { background-position: -33px -132px; }
-.sprite-dribbble-colored { background-position: -66px -132px; }
-.sprite-linkedin-colored { background-position: -99px -132px; }
-.sprite-instagram-colored { background-position: -132px -132px; }
-
-
 
 
 .navbar-links {
@@ -77,14 +42,14 @@ ul {
 }
 
 li {
-    float: left;
+    float: left;    
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 0rem 0.7rem;
     text-decoration: none;
 }
 

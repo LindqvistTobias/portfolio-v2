@@ -2,9 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
 import { Link as ScrollLink } from "react-scroll";
+import Logo from "../../assets/logga.png";
+import Github from "../../assets/github-icon.png";
+import Linkedin from "../../assets/linkedin-icon.png";
 
-const Navbar = () => {  
-
+const Navbar = () => {
   return (
     <motion.div
       className="navbar-container"
@@ -13,7 +15,7 @@ const Navbar = () => {
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div className="navbar-inner-container">
-        <h2>TL</h2>
+        <img id="logo" src={Logo} />
         <div className="navbar-links">
           <ul>
             <li>
@@ -83,8 +85,18 @@ const Navbar = () => {
             <li>
               <a
                 href="https://www.linkedin.com/in/tobias-lindqvist-dev/"
-                className={`sprite sprite-linkedin-white`}
-              ></a>
+                >
+                  <img src={Linkedin} alt="Linkedin ref" style={{height: '30px'}} />
+                </a>
+              
+            </li>
+            <li>
+            <a href="https://github.com/LindqvistTobias">
+                <img
+                  src={Github}
+                  alt="Github ref"                  
+                />
+              </a>
             </li>
           </ul>
         </div>
