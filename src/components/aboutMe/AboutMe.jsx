@@ -3,6 +3,16 @@ import "./AboutMe.css";
 import Button from "../button/Button";
 
 const AboutMe = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'assets/tobias-lindqvist-cv.pdf'; // Path to your PDF file
+    link.download = 'tobias-lindqvist-cv.pdf'; // Name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="section-container">
       <div className="divider-container">
@@ -27,9 +37,11 @@ const AboutMe = () => {
             new customers through the internet, ensuring robust solutions and
             excellent customer relationships.
           </p>
-          <Button>
+          <div className="button-container">
+          <Button onClick={handleDownload}>
             Download CV
           </Button>
+          </div>
         </div>
       </div>
     </div>

@@ -45,12 +45,7 @@ const Contact = () => {
           <p>Want to get in touch?</p>
         </div>
         <div className="contact-buttons">
-          <Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            Get in Touch
-            <IconWrapper>
-              <FaPaperPlane />
-            </IconWrapper>
-          </Button>
+          To be anounced
         </div>
       </div>
     </div>

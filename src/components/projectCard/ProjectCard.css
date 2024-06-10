@@ -3,6 +3,10 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .project-image {

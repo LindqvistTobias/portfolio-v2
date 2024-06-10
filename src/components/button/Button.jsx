@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { FaPaperPlane } from 'react-icons/fa';
 
 const StyledButton = styled(motion.button)`
   display: flex;
@@ -11,16 +10,17 @@ const StyledButton = styled(motion.button)`
   font-size: 16px;
   border-radius: 5px;
   border: none;
-  background-color: #282c34; /* Dark background color */
+  background-color: #03338090; /* Dark background color */
   color: #fff;
   cursor: pointer;
   outline: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   font-family: 'Roboto', sans-serif; /* Matching font family */
+  width: 60%;
 
   &:hover {
-    background-color: #61dafb; /* Light blue color on hover */
+    background-color: #959cff44; /* Light blue color on hover */
     color: #282c34;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
@@ -43,9 +43,7 @@ const Button = ({ children, ...props }) => {
       {...props}
     >
       {children}
-      <IconWrapper>
-        <FaPaperPlane />
-      </IconWrapper>
+      
     </StyledButton>
   );
 };
