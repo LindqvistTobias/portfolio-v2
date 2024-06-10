@@ -1,5 +1,6 @@
 import "./ProjectCard.css";
 import React from "react";
+import ButtonProject from "../button/ButtonProject";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -10,6 +11,10 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="project-image">
         <img src={project.img} alt={project.name} />
+        <div className="button-container">
+         <ButtonProject href={project.githubLink}>GitHub</ButtonProject>
+          <ButtonProject href={project.demoLink}>Live Demo</ButtonProject>
+        </div>
       </div>
     </div>
   );
