@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
 import { Link as ScrollLink } from "react-scroll";
-import Logo from "../../assets/logga.png";
+import Logo from "../../assets/loggaVit.png";
 import Github from "../../assets/github-icon.png";
 import Linkedin from "../../assets/linkedin-icon.png";
 

@@ -1,0 +1,19 @@
+.code-background {    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 55%;
+    height: auto;
+    overflow: hidden;        
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  
+  #code-text {
+    margin: 20px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #959cff;
+    white-space: pre-wrap;
+  }
+  

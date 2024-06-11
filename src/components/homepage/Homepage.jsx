@@ -7,14 +7,15 @@ import AboutMe from "../aboutMe/AboutMe";
 import "./Homepage.css";
 import tobiasImage from "../../assets/tobiasLindqvistTransparent.png";
 import Contact from "../contact/Contact";
+import CodeTextAnimation from "../codeTextAnimation/CodeTextAnimation";
 
 const Homepage = () => {
   return (
     <div>
       <Navbar />
       <section id="home" className="container">
-        <div className="container-inner">  
-                  
+        <div className="container-inner"> 
+          
             <motion.div
               className="container-left"
               initial={{ x: "-100vw" }}
@@ -34,7 +35,7 @@ const Homepage = () => {
               <p>Over 10 years experience in sales and customer relations</p>
             </motion.div>
           
-        </div>
+        
         <div className="hero-container">
             <motion.img
               src={tobiasImage}
@@ -43,8 +44,11 @@ const Homepage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 5, delay: 2 }}
-            />
+            />            
         </div>
+        
+        </div>
+        <CodeTextAnimation />
       </section>
       <section id="skills" className={`container dark`}>
         <Skills />

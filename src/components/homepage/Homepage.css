@@ -17,9 +17,7 @@ html {
   .container-inner {
     display: flex;
     width: 55%;    
-    justify-content: space-between;
-
-    flex-wrap: wrap;
+    justify-content: space-between;    
   }  
 
   .container-left {
@@ -56,6 +54,10 @@ html {
   .dark {
     background-color: var(--background-color-dark);
     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .code-text {
+    display: flex;    
   }
 
   #skills {
