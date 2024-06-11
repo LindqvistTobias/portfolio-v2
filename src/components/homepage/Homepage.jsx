@@ -14,29 +14,28 @@ const Homepage = () => {
     <div>
       <Navbar />
       <section id="home" className="container">
-        <div className="container-inner"> 
-          
-            <motion.div
-              className="container-left"
-              initial={{ x: "-100vw" }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 20, delay: 1 }}
-            >
-              <h1>&lt;Coder /&gt;</h1>
-              <p>Full stack developer</p>
-            </motion.div>            
-            <motion.div
-              className="container-right"
-              initial={{ x: "200vw" }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 20, delay: 1 }}
-            >
-              <h1>Experience</h1>
-              <p>Over 10 years experience in sales and customer relations</p>
-            </motion.div>
-          
-        
-        <div className="hero-container">
+        <div className="container-inner">
+        <div className="container-text">
+          <motion.div
+            className="container-left"
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 20, delay: 1 }}
+          >
+            <h1>&lt;Coder /&gt;</h1>
+            <p>Full stack developer</p>
+          </motion.div>
+          <motion.div
+            className="container-right"
+            initial={{ x: "200vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 20, delay: 1 }}
+          >
+            <h1>Experience</h1>
+            <p>Over 10 years experience in sales and customer relations</p>
+          </motion.div>
+
+          <div className="hero-container">
             <motion.img
               src={tobiasImage}
               alt="Tobias Lindqvist picture"
@@ -44,11 +43,11 @@ const Homepage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 5, delay: 2 }}
-            />            
-        </div>
-        
+            />
+          </div>
         </div>
         <CodeTextAnimation />
+        </div>
       </section>
       <section id="skills" className={`container dark`}>
         <Skills />

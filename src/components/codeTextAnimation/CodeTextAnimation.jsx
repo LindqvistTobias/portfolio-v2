@@ -13,20 +13,25 @@ try: example_instance = ExampleClass(10) print(example_instance.multiply(2)) exc
 `;
 
 const CodeTextAnimation = () => {
-  const [displayText, setDisplayText] = useState("");
-
-  useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < codeString.length) {
-        setDisplayText((prev) => prev + codeString[index]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 10);
-    return () => clearInterval(interval);
-  }, []);
+    const [displayText, setDisplayText] = useState("");
+  
+    useEffect(() => {
+      const delay = setTimeout(() => {
+        let index = 0;
+        const interval = setInterval(() => {
+          if (index < codeString.length) {
+            setDisplayText((prev) => prev + codeString[index]);
+            index++;
+          } else {
+            clearInterval(interval);
+          }
+        }, 30); // Reduced interval to speed up the animation
+  
+        return () => clearInterval(interval);
+      }, 4000); // 2 seconds delay
+  
+      return () => clearTimeout(delay);
+    }, []);
 
   return (
     <motion.div 

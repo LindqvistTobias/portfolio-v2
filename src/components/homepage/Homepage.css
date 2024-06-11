@@ -15,8 +15,12 @@ html {
   }
 
   .container-inner {
+    width: 55%;
+  }
+
+  .container-text {
     display: flex;
-    width: 55%;    
+    width: 100%;    
     justify-content: space-between;    
   }  
 
@@ -24,7 +28,7 @@ html {
     display: flex;
     flex-direction: column;       
     text-align: left;
-    gap: 0rem;         
+    gap: 0rem;
   }
 
   .container-right {
