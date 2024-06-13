@@ -27,8 +27,15 @@ html {
   .container-left {
     display: flex;
     flex-direction: column;       
-    text-align: left;
-    gap: 0rem;
+    text-align: left;    
+  }
+
+  .container-left h1 {
+    margin: 0%;
+  }
+
+  .container-right h1 {
+    margin: 0%;
   }
 
   .container-right {

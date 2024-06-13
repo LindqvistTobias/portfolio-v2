@@ -1,0 +1,16 @@
+.footer-container {
+    height: 5rem;
+    background-color: var(--background-color);
+    display: flex;
+    width: 100vw;    
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #11111170;
+}
+
+.footer-inner-container {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}

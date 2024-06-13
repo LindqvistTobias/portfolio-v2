@@ -21,7 +21,7 @@ const AboutMe = () => {
       <div className="info-container">
         <div className="list-container">
           <ul>
-            <li>Relationshipbuilder</li>
+            <li>Relationship builder</li>
             <li>Sales specialist</li>
             <li>Problemsolver</li>
             <li>Fullstack</li>

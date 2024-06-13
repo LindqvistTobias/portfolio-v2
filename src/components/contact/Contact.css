@@ -2,8 +2,22 @@
     background-color: white;
 }
 
+
+
 .contact-buttons {
+    display: flex;    
+    flex-direction: column;     
+    padding-right: 10%;      
+}
+
+
+.contact-container {
     display: flex;
-    justify-content: center;
+    gap: 2rem; 
     align-items: center;
+}
+
+.contact-container img {
+    height: 3rem;
+    width: auto;
 }

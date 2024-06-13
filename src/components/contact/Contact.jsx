@@ -2,7 +2,8 @@ import React from "react";
 import "./Contact.css";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { FaPaperPlane } from "react-icons/fa";
+import mailIcon from "../../assets/mail-icon.png"
+import phoneIcon from "../../assets/phone-icon.png"
 
 const Button = styled(motion.button)`
   display: flex;
@@ -41,11 +42,18 @@ const Contact = () => {
       </div>
       <div className="info-container">
         <div className="text-container">
-          <h4>Want to get in touch?</h4>
-          <p>Want to get in touch?</p>
+          <h4>Want to know more about me?</h4>
+          <p>Thank you for considering my application. I am eager to share more about myself and the unique skills I can bring to your company. I would be delighted to further discuss how my background and expertise align with your team's needs.</p>
         </div>
         <div className="contact-buttons">
-          To be anounced
+          <div className="contact-container">
+            <img src={phoneIcon} alt="Phone me" />
+            <p>0700000000</p>
+          </div>
+          <div className="contact-container">
+            <img src={mailIcon} alt="Mail me" />
+            <p>tobias.lindqvist.tl@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>

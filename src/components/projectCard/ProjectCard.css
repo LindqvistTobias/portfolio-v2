@@ -1,5 +1,6 @@
 .project-card-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -10,8 +11,16 @@
     overflow: hidden;
 }
 
+.project {
+    display: flex;    
+}
+
 .project-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
+    gap: 1rem;
 }
 
 .project-image img {
@@ -24,3 +33,19 @@
     display: flex;
     gap: 1rem;    
 }
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* To ensure skills wrap to the next line if they don't fit */
+    width: 100%;
+    border-top: 1px solid #11111130;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .skill-item {
+    padding: 5px 10px;    
+    margin: 2px; /* Small margin to separate the items */
+  }
