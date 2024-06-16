@@ -4,13 +4,25 @@ import Button from "../button/Button";
 
 const AboutMe = () => {
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = 'assets/tobias-lindqvist-cv.pdf'; // Path to your PDF file
-    link.download = 'tobias-lindqvist-cv.pdf'; // Name for the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleDownload = async () => {
+    try {
+      const response = await fetch('assets/tobias-lindqvist-cv.pdf');
+      if (response.ok) {
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'tobias-lindqvist-cv.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      } else {
+        console.error('File not found.');
+      }
+    } catch (error) {
+      console.error('Error downloading the file:', error);
+    }
   };
 
   return (
@@ -38,9 +50,9 @@ const AboutMe = () => {
             excellent customer relationships.
           </p>
           <div className="button-container">
-          <Button onClick={handleDownload}>
-            Download CV
-          </Button>
+            <Button onClick={handleDownload}>
+              Download CV
+            </Button>
           </div>
         </div>
       </div>
