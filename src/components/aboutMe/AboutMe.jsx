@@ -30,7 +30,7 @@ const AboutMe = () => {
       <div className="divider-container">
         <h3>About Me</h3>
       </div>
-      <div className="info-container">
+      <div id="about-me" className="info-container">
         <div className="list-container">
           <ul>
             <li>Relationship builder</li>

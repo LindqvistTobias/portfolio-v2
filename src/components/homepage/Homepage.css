@@ -86,3 +86,50 @@ html {
   #contact {
     height: auto;
   }
+
+  @media screen and (max-width: 1200px) {
+      .container-inner {
+        width: 90%;        
+      }
+
+      .container-text {
+        margin-top: -10rem;
+      }
+
+      .container-left {
+        margin-top: 3rem;
+      }
+
+      .container-right {
+        margin-top: 3rem;
+      }
+
+      .hero {
+        width: 60%;
+        margin-left: 2rem;
+      }      
+  }
+
+  @media screen and (max-width: 900px) {
+    .container-inner {
+      width: 90%;        
+    }
+
+    .container-text {
+      margin-top: -15rem;
+    }
+
+    .container-left {
+      margin-top: -3rem;
+    }
+
+    .container-right {
+      margin-top: 3rem;
+    }
+
+    .hero {
+      width: 90%;
+      margin-left: 2rem;
+    }
+    
+}

@@ -57,3 +57,41 @@
     padding: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 1200px) {
+    .section-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .text-container h4 {
+        margin-left: 1rem;
+    }
+
+    .text-container p {
+        width: 100%;
+    }
+
+    .skills-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .img-container {
+        padding: 0;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+}
