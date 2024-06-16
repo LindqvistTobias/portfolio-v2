@@ -88,3 +88,9 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .project-card-container {
+        width: 80%;
+    }
+}
