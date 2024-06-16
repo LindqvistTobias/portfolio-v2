@@ -25,10 +25,10 @@ const CodeTextAnimation = () => {
           } else {
             clearInterval(interval);
           }
-        }, 15);
+        }, 5);
   
         return () => clearInterval(interval);
-      }, 3000); 
+      }, 5000); 
   
       return () => clearTimeout(delay);
     }, []);

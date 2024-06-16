@@ -126,3 +126,9 @@ li a:hover {
       display: none;
     }
   }
+
+  @media screen and (min-width: 350px) and (max-width: 950px) and (orientation: landscape) {
+    .navbar-links ul {
+        gap: 0.3rem;
+      }
+}

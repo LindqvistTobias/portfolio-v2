@@ -135,17 +135,17 @@ html {
 }
 
 @media screen and (max-width: 769px) {
+
+  h4 {
+    text-align: center;
+  }
   
   .container-text {
     flex-direction: column;
     align-items: center;
-    margin-top: -12rem;
+    margin-top: -10rem;
     justify-content: center;
   }
-/* 
-  .container-left {
-    margin-left: -5rem;
-  } */
 
   .container-left h1 {
     font-size: 3rem;
@@ -174,6 +174,43 @@ html {
   .hero {
     width: 110%;
     margin-left: 5rem;
+  } 
+}
+
+@media screen and (min-width: 350px) and (max-width: 950px) and (orientation: landscape) {
+
+  .container {
+    height: 85vh;    
   }
+
+  .container-inner {
+    width: 90%;
+  }
+
+  .text-container {
+    font-size: 0.9rem;
+    text-align: center;
+    align-items: center;
+  }
+
   
+
+  .container-text {
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;    
+  }
+
+  .container-left {
+    margin-left: none;
+  }
+
+  .container-text h1 {
+    font-size: 2rem
+  }
+
+  .hero {
+    width: 40%;
+    margin-left: 2rem;
+  }
 }

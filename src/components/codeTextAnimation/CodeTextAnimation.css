@@ -23,3 +23,15 @@
       width: 90%;
     }
   }
+
+  @media screen and (max-width: 769px) {
+      .code-background {
+        height: 50%;
+      }
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 950px) and (orientation: landscape) {
+      .code-background {
+        display: none;
+      }
+  }
