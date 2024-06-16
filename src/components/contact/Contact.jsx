@@ -48,7 +48,7 @@ const Contact = () => {
         <div className="contact-buttons">
           <div className="contact-container">
             <img src={phoneIcon} alt="Phone me" />
-            <p>0700000000</p>
+            <p>+46 76 780 93 26</p>
           </div>
           <div className="contact-container">
             <img src={mailIcon} alt="Mail me" />

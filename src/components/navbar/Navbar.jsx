@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
 import { Link as ScrollLink } from "react-scroll";
@@ -7,6 +7,12 @@ import Github from "../../assets/github-icon.png";
 import Linkedin from "../../assets/linkedin-icon.png";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <motion.div
       className="navbar-container"
@@ -15,8 +21,11 @@ const Navbar = () => {
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <div className="navbar-inner-container">
-        <img id="logo" src={Logo} />
-        <div className="navbar-links">
+        <img id="logo" src={Logo} alt="Logo" />
+        <div className="hamburger" onClick={toggleMenu}>
+          ☰
+        </div>
+        <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li>
               <ScrollLink
@@ -28,18 +37,6 @@ const Navbar = () => {
                 offset={-50}
               >
                 Home
-              </ScrollLink>
-            </li>
-            <li>
-              <ScrollLink
-                to="skills"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-50}
-              >
-                Skills
               </ScrollLink>
             </li>
             <li>
@@ -83,19 +80,13 @@ const Navbar = () => {
         <div className="navbar-socials">
           <ul>
             <li>
-              <a
-                href="https://www.linkedin.com/in/tobias-lindqvist-dev/"
-                >
-                  <img src={Linkedin} alt="Linkedin ref" style={{height: '30px'}} />
-                </a>
-              
+              <a href="https://www.linkedin.com/in/tobias-lindqvist-dev/">
+                <img src={Linkedin} alt="Linkedin ref" style={{ height: '30px' }} />
+              </a>
             </li>
             <li>
-            <a href="https://github.com/LindqvistTobias">
-                <img
-                  src={Github}
-                  alt="Github ref"                  
-                />
+              <a href="https://github.com/LindqvistTobias">
+                <img src={Github} alt="Github ref" />
               </a>
             </li>
           </ul>

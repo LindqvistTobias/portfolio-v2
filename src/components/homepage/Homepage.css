@@ -133,3 +133,47 @@ html {
     }
     
 }
+
+@media screen and (max-width: 769px) {
+  
+  .container-text {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12rem;
+    justify-content: center;
+  }
+/* 
+  .container-left {
+    margin-left: -5rem;
+  } */
+
+  .container-left h1 {
+    font-size: 3rem;
+  } 
+
+  .container-left {
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .container-right  {
+    align-items: center;
+  }
+
+  .container-right h1 {
+    display: none;
+  }
+
+  .container-right p {
+    width: 60%;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .hero {
+    width: 110%;
+    margin-left: 5rem;
+  }
+  
+}

@@ -16,7 +16,7 @@ const Skills = () => {
             <div className="info-container">
                 <div className="text-container">
                     <h4>Technologies</h4>
-                    <p>I specialize in using <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>MongoDB</strong> to build dynamic web applications. My expertise extends to frameworks like <strong>React</strong>, <strong>Material UI</strong>, and <strong>Framer Motion</strong> for creating engaging user interfaces. Additionally, I utilize <strong>Node.js</strong> for server-side development and <strong>Git</strong> for efficient version control and collaboration.</p>
+                    <p>I specialize in using <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>MongoDB</strong> to build dynamic web applications. My expertise extends to frameworks like <strong>React</strong>, <strong>Material UI</strong>, and <strong>Framer Motion</strong> for creating engaging user interfaces. Additionally, I utilize <strong>Node.js</strong> and <strong>Express</strong> for server-side development and <strong>Git</strong> for efficient version control and collaboration.</p>
                 </div>
                 <div className="skills-container">
                 <div className="img-container">

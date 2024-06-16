@@ -77,3 +77,52 @@ li a:hover {
         height: auto;
     }
 }
+
+@media screen and (max-width: 769px) {
+    .navbar-container {
+        height: 4rem;
+    }
+    
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 30%;
+      background-color: #333; /* Adjust as needed */
+      position: absolute;
+      top: 4rem; /* Adjust based on your navbar height */
+      right: 0;
+      z-index: 10;
+      padding: 10px 0; /* Adjust as needed */
+    }
+  
+    .navbar-links ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navbar-links ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+    }
+  
+    .navbar-socials {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 770px) {
+    .hamburger {
+      display: none;
+    }
+  }
