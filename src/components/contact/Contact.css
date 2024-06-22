@@ -2,14 +2,17 @@
     background-color: white;
 }
 
-
+.contact-container-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .contact-buttons {
     display: flex;    
     flex-direction: column;     
     padding-right: 10%;      
 }
-
 
 .contact-container {
     display: flex;
@@ -21,3 +24,38 @@
     height: 3rem;
     width: auto;
 }
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+h5 {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 900px) {
+  
+  
+}
+
+@media screen and (max-width: 769px) {
+    .contact-form-container {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 950px) and (orientation: landscape) {
+
+
+}
+

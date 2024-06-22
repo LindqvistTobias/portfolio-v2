@@ -88,148 +88,163 @@ html {
   }
 
   @media screen and (max-width: 1200px) {
-      .container-inner {
-        width: 90%;        
-      }
-
-      .container-text {
-        margin-top: -10rem;
-      }
-
-      .container-left {
-        margin-top: 3rem;
-      }
-
-      .container-right {
-        margin-top: 3rem;
-      }
-
-      .hero {
-        width: 60%;
-        margin-left: 2rem;
-      }      
+    .container-inner {
+      width: 90%;        
+    }
+  
+    .container-text {
+      margin-top: -10rem;
+    }
+  
+    .container-left {
+      margin-top: 3rem;
+    }
+  
+    .container-right {
+      margin-top: 3rem;
+    }
+  
+    .hero {
+      width: 60%;
+      margin-left: 2rem;
+    }      
   }
-
+  
   @media screen and (max-width: 900px) {
     .container-inner {
       width: 90%;        
     }
-
+  
     .container-text {
       margin-top: -15rem;
     }
-
+  
     .container-left {
       margin-top: -3rem;
     }
-
+  
     .container-right {
       margin-top: 3rem;
     }
-
+  
     .hero {
       width: 90%;
       margin-left: 2rem;
     }
-    
-}
-
-@media screen and (max-width: 769px) {
-
-  h4 {
-    text-align: center;
   }
   
-  .container-text {
-    flex-direction: column;
-    align-items: center;
-    margin-top: -10rem;
-    justify-content: center;
-  }
-
-  .container-left h1 {
-    font-size: 3rem;
-  } 
-
-  .container-left {
-    align-items: center;
-    font-size: 1.2rem;
-  }
-
-  .container-left p {
-    align-items: center;
-    font-size: 1.1rem;
-  }
-
-  .container-right  {
-    align-items: center;
-  }
-
-  .container-right h1 {
-    display: none;
-  }
-
-  .container-right p {
-    width: 60%;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 0;
-  }
-
-  .hero {
-    width: 110%;
-    margin-left: 5rem;
-  } 
-}
-
-@media screen and (max-width: 480px) {
-  .container-left h1 {
-    font-size: 2rem;
-  } 
-  .container-text {
-    margin-top: -7rem;
-  }
-  .container-right {
+  @media screen and (max-width: 769px) {
+  
+    h4 {
+      text-align: center;
+    }
+  
+    .container-text {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -10rem;
+      justify-content: center;
+    }
+  
+    .container-left h1 {
+      font-size: 3rem;
+    } 
+  
+    .container-left {
+      align-items: center;
+      font-size: 1.2rem;
+    }
+  
+    .container-left p {
+      align-items: center;
+      font-size: 1.1rem;
+    }
+  
+    .container-right  {
+      align-items: center;
+    }
+  
+    .container-right h1 {
+      display: none;
+    }
+  
+    .container-right p {
+      width: 60%;
+      font-size: 0.9rem;
+      text-align: center;
       margin-top: 0;
+    }
+  
+    .hero {
+      width: 110%;
+      margin-left: 5rem;
+    } 
   }
-  .hero {
-    width: 100%;
-    margin-left: 5rem;
-  } 
-}
-
-@media screen and (min-width: 350px) and (max-width: 950px) and (orientation: landscape) {
-
-  .container {
-    height: 85vh;    
+  
+  @media screen and (max-width: 480px) {
+    .container-left h1 {
+      font-size: 2rem;
+    } 
+    .container-text {
+      margin-top: -7rem;
+    }
+    .container-right {
+        margin-top: 0;
+    }
+    .hero {
+      width: 100%;
+      margin-left: 5rem;
+    } 
   }
+  
+  @media screen and (min-width: 350px) and (max-width: 950px) and (orientation: landscape) {
+  
+    .container {
+      height: 85vh;    
+    }
+  
+    .container-inner {
+      width: 90%;
+    }
+  
+    .text-container {
+      font-size: 0.9rem;
+      text-align: center;
+      align-items: center;
+    }  
+  
+    .container-text {
+      align-items: center;
+      margin-top: 5rem;
+      flex-direction: row;
+      justify-content: space-between;    
+      width: 100%;
+    }
+  
+    .container-left {
+      margin: 0;
+      width: 50%;
+      align-items: start;
+    }
 
-  .container-inner {
-    width: 90%;
+    .container-right {
+      margin: 0;
+      width: 50%;
+      align-items: end;
+      gap: 1rem;
+    }
+
+    .container-right h1 {
+      display: flex;
+    }
+  
+    .container-text h1 {
+      font-size: 2rem
+    }
+  
+    .hero {
+      width: 40%;
+          
+    }
   }
-
-  .text-container {
-    font-size: 0.9rem;
-    text-align: center;
-    align-items: center;
-  }  
-
-  .container-text {
-    align-items: center;
-    margin-top: 5rem;
-    text-align: center;    
-  }
-
-  .container-left {
-    margin-left: none;
-  }
-
-  .container-text h1 {
-    font-size: 2rem
-  }
-
-  .hero {
-    width: 40%;
-    margin-left: 2rem;
-  }
-}
+  

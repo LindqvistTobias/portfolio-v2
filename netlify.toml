@@ -1,13 +1,18 @@
 [build]
   command = "pnpm run build"
   publish = "dist"
+  functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "18.12.0"
 
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"
-  inputs = { node_modules = true }
+[functions]
+  node_bundler = "esbuild"
+
+# Remove the problematic plugin configuration
+# [[plugins]]
+#   package = "@netlify/plugin-functions-install-core"
+#   inputs = { node_modules = true }
 
 [build.processing]
   skip_processing = true

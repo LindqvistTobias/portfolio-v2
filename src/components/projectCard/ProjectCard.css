@@ -21,6 +21,7 @@
     justify-content: center;
     width: 50%;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .project-image img {
@@ -78,14 +79,23 @@
         margin: 1rem 0;
         flex-direction: row;
     }
-    .project-image img{
-        width: 70%;       
+    .project-image img {
+        width: 70%;            
     }
 
     .button-container {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .skills {
+        gap: 0;
+        font-size: 0.7rem;
+    }
+
+    .skill-item {
+        padding: 0 0.2rem;
     }
 }
 

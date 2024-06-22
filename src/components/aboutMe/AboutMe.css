@@ -21,9 +21,10 @@
     flex-direction: column;
     width: 50%;
     margin-left: auto;
-    justify-content: center;
-    
+    justify-content: center;    
 }
+
+
 
 .button-container {
     display: flex;

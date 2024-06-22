@@ -17,7 +17,7 @@ const StyledButton = styled(motion.button)`
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   font-family: 'Roboto', sans-serif; /* Matching font family */
-  width: 60%;
+  width: 100%;
 
   &:hover {
     background-color: #959cff44; /* Light blue color on hover */
